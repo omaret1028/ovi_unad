@@ -1,0 +1,174 @@
+.app-menu{
+    height: 83%;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    overflow-y:auto;
+    background: #f5f3e5;
+}
+.menu{
+    border:0;
+    width: 15%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-size: 12px;
+    border:1px solid #1d1d1d;
+    background: white;
+    display: inline;
+}
+.notificaciones+ul::-webkit-scrollbar,.ui-datatable-tablewrapper::-webkit-scrollbar,#emergente::-webkit-scrollbar,.contenidos::-webkit-scrollbar,.contenedorppal::-webkit-scrollbar,.app-menu::-webkit-scrollbar,.en-contenidos::-webkit-scrollbar,#deptosmain::-webkit-scrollbar,#sedesmain::-webkit-scrollbar,.cont_tarjetas::-webkit-scrollbar{
+    width: 0.6em;
+    background: #332f2c;
+}
+.notificaciones+ul::-webkit-scrollbar-thumb,.ui-datatable-tablewrapper::-webkit-scrollbar-thumb,#emergente::-webkit-scrollbar-thumb,.contenidos::-webkit-scrollbar-thumb,.contenedorppal::-webkit-scrollbar-thumb,.app-menu::-webkit-scrollbar-thumb,.en-contenidos::-webkit-scrollbar-thumb,#sedesmain::-webkit-scrollbar-thumb,#deptosmain::-webkit-scrollbar-thumb,.cont_tarjetas::-webkit-scrollbar-thumb{
+  background-color: #929294;
+}
+
+.app-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+.app-menu ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.app-menu ul li a {
+  text-decoration : none;
+  cursor: pointer;
+  padding: 15px 0px 15px 5px;
+}
+.app-menu > ul > li > a {
+  color: #fff;
+  display: block;
+  border-top: 1px solid #000000;
+  position: relative;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  /*background: #c8d300;*/
+  background:#1651b8;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-size: 1.2em;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.app-menu > ul > li:hover > a,
+.app-menu > ul > li.abierto > a,
+.app-menu > ul > li.activo > a {
+  background: #1651b8;
+  color: #ffffff;
+}
+.app-menu ul ul {
+  display: none;
+}
+
+.app-menu ul ul li {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.app-menu ul ul li a {
+  background: #464646;
+  display: block;
+  position: relative;
+  font-size: 1.1em;
+  padding: 10px 0px 10px 0px;
+  color: #ffffff;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.app-menu ul ul li:first-child > a {
+  padding-top: 10px;
+}
+.app-menu ul ul ul li {
+  border: 0;
+}
+.app-menu ul ul li:hover > a,
+.app-menu ul ul li.abierto > a,
+.app-menu ul ul li.activo > a {
+  background: #333333;
+  color: black;
+}
+
+.app-menu ul ul ul li a {
+  padding-left: 30px;
+}
+
+.app-menu ul ul ul ul li a {
+  padding-left: 40px;
+}
+
+/* CSS iconos y gráficos */
+.icono{
+  width: 20px;
+  padding-top:5px;
+}
+
+.der{
+    float: right;
+    margin-left: 10px;
+}
+.izq{
+    float: left;
+    margin-right: 10px;
+}
+
+/*CSS menu desplegable movil*/
+.btn-menu{
+  font-size: 1.2em;
+  display: none;
+  padding: 8px;
+  background: #1d1c1c;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-menu:hover, .btn-menu:link{
+    text-decoration : none;
+    background: #1651b8;
+    color: #ffffff;
+
+}
+.btn-menu > i{
+  float: right;
+  line-height: 25px;
+}
+
+/*CSS media movil*/
+@media screen and (max-width: 450px) {
+  .btn-menu {
+    display: block;
+  }
+  .cont-logo{
+  display:none;
+  }
+  .menu{
+  	width:0px !important;
+  	border:0px !important;
+  }
+  .panel-derecho{
+      width: 100% !important;
+      border:0px !important;
+  }
+  .app-menu {
+    position:absolute;/*Actualizado 2017.07.21*/
+    right: 0px;
+    top:0px;
+    width:100%;
+    height: auto; /*Actualizado 2017.07.21*/
+    z-index: 1000;
+  }
+  .app-menu > ul {
+    display: none;  /*Actualizado 2017.07.21*/
+  }
+}
